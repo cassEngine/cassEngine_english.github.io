@@ -1,0 +1,122 @@
+{
+  "site": {
+    "title": "Cassandra Philogene – Portfolio",
+    "tagline": "Génie électrique · Robotique · Électronique · CAD · Programmation",
+    "cta_primary": {
+      "label": "Télécharger mon CV (PDF)",
+      "href": "assets/resume/Cassandra_Philogene_CV(fr).pdf"
+    },
+    "cta_secondary": {
+      "label": "Me contacter",
+      "href": "#contact"
+    }
+  },
+  "about": {
+    "heading": "À propos",
+    "text": "Étudiante en génie électrique à l’Université Concordia, je m’intéresse particulièrement à la robotique, à la conception électronique, au CAD et à la programmation. J’aime passer du schéma au prototype, tester, améliorer et documenter mes apprentissages à travers des projets concrets.",
+    "highlights": [
+      "Recherche de stage – Été 2026",
+      "Approche pratique : conception → intégration → tests",
+      "Esprit d’équipe et curiosité technique"
+    ]
+  },
+  "skills": [
+    {
+      "category": "Programmation",
+      "items": [
+        "C",
+        "C++",
+        "Python",
+        "VHDL"
+      ]
+    },
+    {
+      "category": "Systèmes embarqués",
+      "items": [
+        "Arduino",
+        "ROS2",
+        "Contrôle moteur",
+        "Capteurs"
+      ]
+    },
+    {
+      "category": "Matériel & conception",
+      "items": [
+        "Conception PCB",
+        "LTspice",
+        "Fusion 360"
+      ]
+    },
+    {
+      "category": "FPGA & simulation",
+      "items": [
+        "Vivado",
+        "ModelSim"
+      ]
+    },
+    {
+      "category": "Outils",
+      "items": [
+        "GitHub",
+        "Linux",
+        "Visual Studio",
+        "PyCharm",
+        "Excel"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "SAE Aero Design – Systèmes électriques",
+      "subtitle": "Université Concordia · 2025 – présent",
+      "image": "sae_plane.jpg",
+      "description": "Participation à l’architecture et à l’intégration des systèmes électriques d’un aéronef télécommandé destiné à la compétition SAE Aero Design.",
+      "bullets": [
+        "Conception de l’architecture électrique (alimentation, distribution, câblage)",
+        "Assemblage, intégration et validation de sous-systèmes",
+        "Participation aux essais et analyse de performance"
+      ],
+      "gallery": [
+        "sae_circuit_architecture.jpg",
+        "sae_circuit.jpg"
+      ]
+    },
+    {
+      "title": "Compétition Robowars – Robot autonome",
+      "subtitle": "Compétition · Avril 2025",
+      "image": "robowars_main.jpg",
+      "description": "Conception d’un robot autonome basé sur Arduino, capable de prendre des décisions en temps réel à partir de capteurs.",
+      "bullets": [
+        "Programmation Arduino et stratégie de contrôle",
+        "Intégration capteurs + contrôle moteur",
+        "Optimisation de la robustesse, vitesse et stabilité"
+      ],
+      "gallery": [
+        "sumo_robot.jpg",
+        "sumo_robot_cad.jpg"
+      ]
+    },
+    {
+      "title": "Aéroglisseur autonome – Prototype & CAD",
+      "subtitle": "Projet · Décembre 2025",
+      "image": "hovercraft.jpg",
+      "description": "Projet de conception d’un aéroglisseur autonome : modélisation CAD, intégration des composants et itérations de design.",
+      "bullets": [
+        "Modélisation CAD avec Fusion 360",
+        "Intégration électronique et tests",
+        "Design orienté contraintes (poids, espace, stabilité)"
+      ],
+      "gallery": [
+        "hovercraft_cad.jpg",
+        "hovercraft_cad_design2.jpg"
+      ]
+    }
+  ],
+  "contact": {
+    "heading": "Contact",
+    "email": "cassandra.cpn221@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/cassandra-philog%C3%A8ne-506678314/",
+    "github": "https://github.com/cassEngine/",
+    "note": "Ouverte aux opportunités de stage – Été 2026."
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "site": {
+    "title": "Cassandra Philogene – Portfolio",
+    "tagline": "Electrical Engineering · Robotics · Electronics · CAD · Programming",
+    "cta_primary": {
+      "label": "Download my resume (PDF)",
+      "href": "assets/resume/Philogene_Cassandra_CV.pdf"
+    },
+    "cta_secondary": {
+      "label": "Contact me",
+      "href": "#contact"
+    }
+  },
+  "about": {
+    "heading": "About",
+    "text": "Electrical Engineering student at Concordia University, with a strong interest in robotics, electronic design, CAD, and programming. I enjoy taking projects from schematic to prototype—testing, iterating, and documenting what I learn through practical, hands-on builds.",
+    "highlights": [
+      "Seeking an internship — Summer 2026",
+      "Hands-on approach: design → integration → testing",
+      "Team mindset and technical curiosity"
+    ]
+  },
+  "skills": [
+    {
+      "category": "Programming",
+      "items": [
+        "C",
+        "C++",
+        "Python",
+        "VHDL"
+      ]
+    },
+    {
+      "category": "Embedded Systems",
+      "items": [
+        "Arduino",
+        "ROS2",
+        "Motor control",
+        "Sensors"
+      ]
+    },
+    {
+      "category": "Hardware & Design",
+      "items": [
+        "PCB design",
+        "LTspice",
+        "Fusion 360"
+      ]
+    },
+    {
+      "category": "FPGA & Simulation",
+      "items": [
+        "Vivado",
+        "ModelSim"
+      ]
+    },
+    {
+      "category": "Tools",
+      "items": [
+        "GitHub",
+        "Linux",
+        "Visual Studio",
+        "PyCharm",
+        "Excel"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "SAE Aero Design – Electrical Systems",
+      "subtitle": "Concordia University · 2025 – Present",
+      "image": "sae_plane.jpg",
+      "description": "Contributing to the architecture and integration of the electrical systems for a remote-controlled aircraft built for the SAE Aero Design competition.",
+      "bullets": [
+        "Designed the electrical architecture (power, distribution, wiring)",
+        "Assembled, integrated, and validated sub-systems",
+        "Supported testing and performance analysis"
+      ],
+      "gallery": [
+        "sae_circuit_architecture.jpg",
+        "sae_circuit.jpg"
+      ]
+    },
+    {
+      "title": "Robowars Competition – Autonomous Robot",
+      "subtitle": "Competition · April 2025",
+      "image": "robowars_main.jpg",
+      "description": "Designed an Arduino-based autonomous robot capable of making real-time decisions using sensor feedback.",
+      "bullets": [
+        "Arduino programming and control strategy",
+        "Sensor integration and motor control",
+        "Improved robustness, speed, and stability"
+      ],
+      "gallery": [
+        "sumo_robot.jpg",
+        "sumo_robot_cad.jpg"
+      ]
+    },
+    {
+      "title": "Autonomous Hovercraft – Prototype & CAD",
+      "subtitle": "Project · December 2025",
+      "image": "hovercraft.jpg",
+      "description": "Autonomous hovercraft design project: CAD modeling, component integration, and iterative design improvements.",
+      "bullets": [
+        "CAD modeling in Fusion 360",
+        "Electronics integration and testing",
+        "Constraint-driven design (weight, footprint, stability)"
+      ],
+      "gallery": [
+        "hovercraft_cad.jpg",
+        "hovercraft_cad_design2.jpg"
+      ]
+    }
+  ],
+  "contact": {
+    "heading": "Contact",
+    "email": "cassandra.cpn221@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/cassandra-philog%C3%A8ne-506678314/",
+    "github": "https://github.com/cassEngine/",
+    "note": "Open to internship opportunities — Summer 2026."
+  }
+}

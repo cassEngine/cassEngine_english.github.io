@@ -7,42 +7,258 @@
   --border:rgba(255,255,255,.08);
   --shadow: 0 12px 30px rgba(0,0,0,.35);
 }
+
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;background:radial-gradient(1200px 700px at 15% 10%, rgba(64,179,162,.18), transparent 60%), var(--bg);color:var(--text);}
+
+html,body{
+  margin:0;
+  padding:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans",sans-serif;
+  background:radial-gradient(1200px 700px at 15% 10%, rgba(64,179,162,.18), transparent 60%), var(--bg);
+  color:var(--text);
+}
+
 a{color:inherit}
-.container{max-width:1080px;margin:0 auto;padding:28px 18px 64px;}
-nav{display:flex;gap:14px;align-items:center;justify-content:space-between;position:sticky;top:0;background:rgba(11,18,32,.72);backdrop-filter: blur(10px);border-bottom:1px solid var(--border);padding:12px 18px;z-index:10}
-.navlinks{display:flex;gap:14px;flex-wrap:wrap}
-.navlinks a{text-decoration:none;color:var(--muted);font-weight:600}
+
+.container{
+  max-width:1080px;
+  margin:0 auto;
+  padding:28px 18px 64px;
+}
+
+nav{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  justify-content:space-between;
+  position:sticky;
+  top:0;
+  background:rgba(11,18,32,.72);
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid var(--border);
+  padding:12px 18px;
+  z-index:10
+}
+
+.navlinks{
+  display:flex;
+  gap:14px;
+  flex-wrap:wrap
+}
+
+.navlinks a{
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:600
+}
+
 .navlinks a:hover{color:var(--text)}
-.brand{font-weight:800;letter-spacing:.2px}
-.hero{padding:46px 0 18px;display:grid;grid-template-columns: 1.3fr .7fr;gap:18px;align-items:start}
-@media (max-width: 860px){.hero{grid-template-columns:1fr}}
-.kicker{color:var(--muted);font-weight:700}
-h1{font-size:44px;line-height:1.08;margin:.25rem 0 0}
-.subtitle{font-size:16px;color:var(--muted);margin:10px 0 18px;max-width:60ch}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:11px 14px;border-radius:14px;border:1px solid var(--border);text-decoration:none;font-weight:700}
-.btn.primary{background:rgba(64,179,162,.16);border-color:rgba(64,179,162,.35)}
-.btn:hover{transform: translateY(-1px);transition:.15s ease}
-.card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow)}
+
+.brand{
+  font-weight:800;
+  letter-spacing:.2px
+}
+
+/* Slightly tighter hero so Projects appear sooner */
+.hero{
+  padding:34px 0 12px;
+  display:grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap:18px;
+  align-items:start
+}
+
+@media (max-width: 860px){
+  .hero{grid-template-columns:1fr}
+}
+
+.kicker{
+  color:var(--muted);
+  font-weight:700
+}
+
+h1{
+  font-size:44px;
+  line-height:1.08;
+  margin:.25rem 0 0
+}
+
+.subtitle{
+  font-size:16px;
+  color:var(--muted);
+  margin:10px 0 18px;
+  max-width:60ch
+}
+
+.cta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:11px 14px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  text-decoration:none;
+  font-weight:700
+}
+
+.btn.primary{
+  background:rgba(64,179,162,.16);
+  border-color:rgba(64,179,162,.35)
+}
+
+.btn:hover{
+  transform: translateY(-1px);
+  transition:.15s ease
+}
+
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  border:1px solid var(--border);
+  border-radius:20px;
+  box-shadow:var(--shadow)
+}
+
 .section{margin-top:28px}
-.section h2{margin:0 0 12px;font-size:22px}
-.grid{display:grid;gap:14px}
-.grid.skills{grid-template-columns: repeat(3, minmax(0,1fr))}
-@media (max-width: 860px){.grid.skills{grid-template-columns:1fr}}
+
+.section h2{
+  margin:0 0 12px;
+  font-size:22px
+}
+
+.grid{
+  display:grid;
+  gap:14px
+}
+
+.grid.skills{
+  grid-template-columns: repeat(3, minmax(0,1fr))
+}
+
+@media (max-width: 860px){
+  .grid.skills{grid-template-columns:1fr}
+}
+
 .padded{padding:16px}
-.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.pill{border:1px solid var(--border);border-radius:999px;padding:6px 10px;color:var(--muted);font-weight:650;font-size:13px}
-.projects{display:grid;gap:16px}
-.project{display:grid;grid-template-columns: 1fr 1.2fr;gap:14px;overflow:hidden}
-@media (max-width: 860px){.project{grid-template-columns:1fr}}
-.project img{width:100%;height:100%;max-height:340px;object-fit:cover;border-radius:18px;border:1px solid var(--border)}
-.project h3{margin:0 0 6px}
-.meta{color:var(--muted);font-weight:650;font-size:13px;margin-bottom:10px}
-ul{margin:10px 0 0 18px;color:var(--text)}
-li{margin:6px 0;color:var(--muted)}
-.gallery{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-.gallery img{width:160px;height:110px;object-fit:cover;border-radius:14px;border:1px solid var(--border)}
-.footer{margin-top:30px;color:var(--muted);font-size:13px}
-.small{color:var(--muted);font-size:13px}
+
+.pills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:10px
+}
+
+.pill{
+  border:1px solid var(--border);
+  border-radius:999px;
+  padding:6px 10px;
+  color:var(--muted);
+  font-weight:650;
+  font-size:13px
+}
+
+.projects{
+  display:grid;
+  gap:16px
+}
+
+.project{
+  display:grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap:16px;
+  overflow:hidden
+}
+
+@media (max-width: 860px){
+  .project{grid-template-columns:1fr}
+}
+
+.project img{
+  width:100%;
+  height:100%;
+  max-height:300px; /* prevents image from dominating the card */
+  object-fit:cover;
+  border-radius:18px;
+  border:1px solid var(--border)
+}
+
+.project h3{margin:0 0 4px}
+
+.meta{
+  color:var(--muted);
+  font-weight:650;
+  font-size:13px;
+  margin-bottom:8px
+}
+
+/* Make bullet content easier to read */
+ul{
+  margin:10px 0 0 18px;
+  color:var(--text)
+}
+
+li{
+  margin:4px 0;
+  color:rgba(233,240,255,.85)
+}
+
+.gallery{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:12px
+}
+
+.gallery img{
+  width:150px;
+  height:100px;
+  object-fit:cover;
+  border-radius:14px;
+  border:1px solid var(--border)
+}
+
+.footer{
+  margin-top:30px;
+  color:var(--muted);
+  font-size:13px
+}
+
+.small{
+  color:var(--muted);
+  font-size:13px
+}
+
+/* Planned / In-progress projects: visually quieter
+   Add class="card padded project planned" in index.html for planned items */
+.project.planned{
+  opacity:.82;
+  filter:saturate(.9);
+}
+
+.project.planned .meta,
+.project.planned .subtitle,
+.project.planned li{
+  color: rgba(155,176,209,.92);
+}
+
+.project.planned img{
+  opacity:.9;
+}
+
+/* Optional badge for planned items */
+.badge{
+  display:inline-flex;
+  align-items:center;
+  padding:4px 10px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  color:var(--muted);
+  font-size:12px;
+  font-weight:700;
+  margin-left:8px;
+}

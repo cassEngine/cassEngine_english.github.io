@@ -13,11 +13,11 @@
   },
   "about": {
     "heading": "About",
-    "text": "Electrical Engineering student at Concordia University, with a strong interest in robotics, electronic design, CAD, and programming. I enjoy taking projects from schematic to prototype—testing, iterating, and documenting what I learn through practical, hands-on builds.",
+    "text": "Electrical Engineering student at Concordia University focused on embedded systems, robotics, and power electronics. I build and validate prototypes through schematic and simulation work, integration and wiring, and iterative testing. I document design decisions so systems are repeatable and debuggable.",
     "highlights": [
-      "Seeking an internship — Summer 2026",
-      "Hands-on approach: design → integration → testing",
-      "Team mindset and technical curiosity"
+      "Seeking internship — Summer 2026",
+      "Hands-on: design → integration → validation",
+      "Team mindset: build, debug, document"
     ]
   },
   "skills": [
@@ -35,8 +35,9 @@
       "items": [
         "Arduino",
         "ROS2",
-        "Motor control",
-        "Sensors"
+        "Sensor interfacing",
+        "Closed-loop control (PID)",
+        "Motor drivers"
       ]
     },
     {
@@ -59,9 +60,8 @@
       "items": [
         "GitHub",
         "Linux",
-        "Visual Studio",
-        "PyCharm",
-        "Excel"
+        "MATLAB",
+        "Visual Studio"
       ]
     }
   ],
@@ -70,11 +70,12 @@
       "title": "SAE Aero Design – Electrical Systems",
       "subtitle": "Concordia University · 2025 – Present",
       "image": "sae_plane.jpg",
-      "description": "Contributing to the architecture and integration of the electrical systems for a remote-controlled aircraft built for the SAE Aero Design competition.",
+      "description": "Electrical systems work for a competition RC aircraft: power distribution, harnessing, integration, and troubleshooting during build and flight testing.",
       "bullets": [
-        "Designed the electrical architecture (power, distribution, wiring)",
-        "Assembled, integrated, and validated sub-systems",
-        "Supported testing and performance analysis"
+        "Electrical architecture: power distribution and wiring/harnessing approach",
+        "Assembly and integration: connectors, routing, continuity checks, subsystem bring-up",
+        "Debug support: fault isolation for shorts and intermittent connections during prototyping",
+        "Flight-test support: review observations/telemetry and propose integration changes"
       ],
       "gallery": [
         "sae_circuit_architecture.jpg",
@@ -85,11 +86,11 @@
       "title": "Robowars Competition – Autonomous Robot",
       "subtitle": "Competition · April 2025",
       "image": "robowars_main.jpg",
-      "description": "Designed an Arduino-based autonomous robot capable of making real-time decisions using sensor feedback.",
+      "description": "Autonomous Arduino-based robot designed for real-time behavior using sensor feedback and motor actuation.",
       "bullets": [
-        "Arduino programming and control strategy",
-        "Sensor integration and motor control",
-        "Improved robustness, speed, and stability"
+        "Control logic: sensor read → decision logic → actuation loop on Arduino Nano",
+        "Integrated sensors and motor driver; tuned behavior for stable real-time response",
+        "Improved robustness through mounting, wiring strain relief, and iteration"
       ],
       "gallery": [
         "sumo_robot.jpg",
@@ -100,16 +101,40 @@
       "title": "Autonomous Hovercraft – Prototype & CAD",
       "subtitle": "Project · December 2025",
       "image": "hovercraft.jpg",
-      "description": "Autonomous hovercraft design project: CAD modeling, component integration, and iterative design improvements.",
+      "description": "Autonomous hovercraft prototype focused on CAD-to-build integration, electronics bring-up, and iterative testing for maze navigation.",
       "bullets": [
-        "CAD modeling in Fusion 360",
-        "Electronics integration and testing",
-        "Constraint-driven design (weight, footprint, stability)"
+        "Fusion 360 CAD for manufacturable layout and stable packaging",
+        "Electronics integration and bring-up: wiring, sensor checks, incremental testing",
+        "Navigation behavior iteration based on test results (tuning and debugging)"
       ],
       "gallery": [
         "hovercraft_cad.jpg",
         "hovercraft_cad_design2.jpg"
       ]
+    },
+    {
+      "title": "ROS2 Chess Robot Arm (Planned / In Progress)",
+      "subtitle": "IEEE Club Project · Target: Summer 2026",
+      "image": "placeholder_project.jpg",
+      "description": "Planned robotics project to build a ROS2-based control stack for a robotic arm to execute chess moves reliably and safely.",
+      "bullets": [
+        "Goal: ROS2 nodes in Python for command handling and state feedback",
+        "Goal: motion execution pipeline (kinematics and trajectory generation)",
+        "Goal: safety constraints (joint limits, workspace bounds) and documentation"
+      ],
+      "gallery": []
+    },
+    {
+      "title": "Buck Converter PCB (BEC) (Planned / In Progress)",
+      "subtitle": "SAE Club Project · Target: Summer 2026",
+      "image": "placeholder_project.jpg",
+      "description": "Planned power electronics project to design a buck converter PCB for a stable power rail for RC/aircraft electronics.",
+      "bullets": [
+        "Goal: architecture and component selection (controller, inductor, protections)",
+        "Goal: schematic and BOM; LTspice validation (stability and transient response)",
+        "Goal: PCB layout fundamentals (grounding, decoupling, high di/dt loop control)"
+      ],
+      "gallery": []
     }
   ],
   "contact": {

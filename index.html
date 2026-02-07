@@ -6,6 +6,56 @@
   <title>Cassandra Philogene – Portfolio</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+  <!-- Lightbox (click any gallery image to expand) -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox-close" aria-label="Close image">×</button>
+  <img class="lightbox-img" alt="">
+</div>
+
+<script>
+  (function () {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('.lightbox-img');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+
+    function openLightbox(src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || 'Expanded image';
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden'; // stop background scroll
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    // Make all gallery images clickable
+    document.addEventListener('click', (e) => {
+      const img = e.target.closest('.gallery img');
+      if (!img) return;
+      openLightbox(img.src, img.alt);
+    });
+
+    // Close actions
+    closeBtn.addEventListener('click', closeLightbox);
+
+    // Click outside the image closes
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    // ESC closes
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+        closeLightbox();
+      }
+    });
+  })();
+</script>
 <body>
   <nav>
     <div class="brand">Cassandra Philogene</div>

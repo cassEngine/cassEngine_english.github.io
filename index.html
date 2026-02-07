@@ -6,56 +6,6 @@
   <title>Cassandra Philogene – Portfolio</title>
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-  <!-- Lightbox (click any gallery image to expand) -->
-<div id="lightbox" class="lightbox" aria-hidden="true">
-  <button class="lightbox-close" aria-label="Close image">×</button>
-  <img class="lightbox-img" alt="">
-</div>
-
-<script>
-  (function () {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = lightbox.querySelector('.lightbox-img');
-    const closeBtn = lightbox.querySelector('.lightbox-close');
-
-    function openLightbox(src, alt) {
-      lightboxImg.src = src;
-      lightboxImg.alt = alt || 'Expanded image';
-      lightbox.classList.add('open');
-      lightbox.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden'; // stop background scroll
-    }
-
-    function closeLightbox() {
-      lightbox.classList.remove('open');
-      lightbox.setAttribute('aria-hidden', 'true');
-      lightboxImg.src = '';
-      document.body.style.overflow = '';
-    }
-
-    // Make all gallery images clickable
-    document.addEventListener('click', (e) => {
-      const img = e.target.closest('.gallery img');
-      if (!img) return;
-      openLightbox(img.src, img.alt);
-    });
-
-    // Close actions
-    closeBtn.addEventListener('click', closeLightbox);
-
-    // Click outside the image closes
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) closeLightbox();
-    });
-
-    // ESC closes
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && lightbox.classList.contains('open')) {
-        closeLightbox();
-      }
-    });
-  })();
-</script>
 <body>
   <nav>
     <div class="brand">Cassandra Philogene</div>
@@ -214,7 +164,7 @@
           </div>
         </div>
 
-        <!-- NEW: 555 Timer PCB project (PCB_main.jpg is the main image) -->
+        <!-- NEW: 555 Timer PCB project -->
         <div class="card padded project">
           <div><img src="assets/images/PCB_main.jpg" alt="Dual LED Blinker PCB (555 Timer, Variable Speed)"></div>
           <div>
@@ -255,7 +205,6 @@
           <div><img src="assets/images/placeholder_project.jpg" alt="Buck Converter PCB (BEC) (Planned / In Progress)"></div>
           <div>
             <h3>Buck Converter PCB (BEC) (Planned / In Progress)</h3>
-            <!-- UPDATED: Target date -->
             <div class="meta">SAE Club Project · Target: March 2026</div>
             <div class="subtitle" style="margin:0">
               Planned power electronics project to design a buck converter PCB for a stable power rail for RC/aircraft electronics.
@@ -283,7 +232,60 @@
       </div>
     </section>
 
-    <div class="footer">© 2026 Cassandra Philogene · Built for internship applications (Summer and Winter 2026)</div>
+    <div class="footer">© 2026 Cassandra Philogene · Built for internship applications (Summer 2026)</div>
   </div>
+
+  <!-- ===== Lightbox (click gallery images to expand) ===== -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" aria-label="Close image">×</button>
+    <img class="lightbox-img" alt="">
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = lightbox.querySelector('.lightbox-img');
+      const closeBtn = lightbox.querySelector('.lightbox-close');
+
+      function openLightbox(src, alt) {
+        lightboxImg.src = src;
+        lightboxImg.alt = alt || 'Expanded image';
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImg.src = '';
+        document.body.style.overflow = '';
+      }
+
+      // Click any gallery image -> open lightbox
+      document.addEventListener('click', (e) => {
+        const img = e.target.closest('.gallery img');
+        if (!img) return;
+        openLightbox(img.src, img.alt);
+      });
+
+      // Close button
+      closeBtn.addEventListener('click', closeLightbox);
+
+      // Click outside image (on overlay background) closes
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      // ESC closes
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('open')) {
+          closeLightbox();
+        }
+      });
+    });
+  </script>
+  <!-- ===== /Lightbox ===== -->
+
 </body>
 </html>

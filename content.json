@@ -113,6 +113,33 @@
       ]
     },
     {
+  "title": "Dual LED Blinker PCB (555 Timer, Variable Speed)",
+  "subtitle": "PCB Build · January 2026",
+  "image": "PCB_main.jpg",
+  "description": "Designed and built a 555-timer astable oscillator PCB to blink two LEDs with an adjustable rate. The blink frequency is set by an RC timing network, and a potentiometer enables real-time speed tuning. Verified operation with scope measurements and documented the schematic and design decisions.",
+  "bullets": [
+    "Implemented a 555 timer in astable mode to generate a continuous square-wave output for alternating LED blinking",
+    "Used an RC timing network to set the oscillation frequency and a potentiometer for on-the-fly blink-rate adjustment",
+    "Validated waveforms and timing behavior with oscilloscope measurements; documented schematic, assumptions, and results"
+  ],
+  "gallery": [
+    "PCB_schematic.jpg",
+    "PCB_building.jpg"
+  ]
+}
+     {
+  "title": "Buck Converter PCB (BEC) (Planned / In Progress)",
+  "subtitle": "SAE Club Project · Target: March 2026",
+  "image": "placeholder_project.jpg",
+  "description": "Planned power electronics project to design a buck converter PCB for a stable power rail for RC/aircraft electronics.",
+  "bullets": [
+    "Goal: architecture and component selection (controller, inductor, protections)",
+    "Goal: schematic and BOM; LTspice validation (stability and transient response)",
+    "Goal: PCB layout fundamentals (grounding, decoupling, high di/dt loop control)"
+  ],
+  "gallery": []
+}
+    {
       "title": "ROS2 Chess Robot Arm (Planned / In Progress)",
       "subtitle": "IEEE Club Project · Target: Summer 2026",
       "image": "placeholder_project.jpg",
@@ -124,18 +151,6 @@
       ],
       "gallery": []
     },
-    {
-      "title": "Buck Converter PCB (BEC) (Planned / In Progress)",
-      "subtitle": "SAE Club Project · Target: Summer 2026",
-      "image": "placeholder_project.jpg",
-      "description": "Planned power electronics project to design a buck converter PCB for a stable power rail for RC/aircraft electronics.",
-      "bullets": [
-        "Goal: architecture and component selection (controller, inductor, protections)",
-        "Goal: schematic and BOM; LTspice validation (stability and transient response)",
-        "Goal: PCB layout fundamentals (grounding, decoupling, high di/dt loop control)"
-      ],
-      "gallery": []
-    }
   ],
   "contact": {
     "heading": "Contact",

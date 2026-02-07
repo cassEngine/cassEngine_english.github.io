@@ -319,7 +319,7 @@ a:hover{
   .btn,.card,.gallery img{transition:none}
 }
 
-/* LIGHTBOX (gallery click-to-expand) */
+/* ===== Lightbox (gallery click-to-expand) ===== */
 .gallery img{
   cursor: zoom-in;
 }
@@ -327,17 +327,17 @@ a:hover{
 .lightbox{
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,.82);
-  display: none;
+  display: none;               /* hidden by default */
   align-items: center;
   justify-content: center;
   padding: 28px 18px;
-  z-index: 9999;
+  background: rgba(0,0,0,.82);
   backdrop-filter: blur(10px);
+  z-index: 9999;
 }
 
 .lightbox.open{
-  display: flex;
+  display: flex;               /* show when opened */
 }
 
 .lightbox-img{
@@ -345,10 +345,10 @@ a:hover{
   max-height: 86vh;
   width: auto;
   height: auto;
+  object-fit: contain;
   border-radius: 18px;
   border: 1px solid rgba(255,255,255,.16);
   box-shadow: var(--shadow), var(--glowBlue), var(--glowViolet);
-  object-fit: contain;
   cursor: zoom-out;
 }
 
@@ -372,3 +372,5 @@ a:hover{
   box-shadow: var(--glowBlue), var(--glowViolet), var(--glowPink);
   border-color: rgba(255,43,214,.45);
 }
+/* ===== /Lightbox ===== */
+

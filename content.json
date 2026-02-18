@@ -23,46 +23,23 @@
   "skills": [
     {
       "category": "Programming",
-      "items": [
-        "C",
-        "C++",
-        "Python",
-        "VHDL"
-      ]
+      "items": ["C", "C++", "Python", "VHDL"]
     },
     {
       "category": "Embedded Systems",
-      "items": [
-        "Arduino",
-        "ROS2",
-        "Sensor interfacing",
-        "Closed-loop control (PID)",
-        "Motor drivers"
-      ]
+      "items": ["Arduino", "ROS2", "Sensor interfacing", "Closed-loop control (PID)", "Motor drivers"]
     },
     {
       "category": "Hardware & Design",
-      "items": [
-        "PCB design",
-        "LTspice",
-        "Fusion 360"
-      ]
+      "items": ["PCB design", "LTspice", "Fusion 360"]
     },
     {
       "category": "FPGA & Simulation",
-      "items": [
-        "Vivado",
-        "ModelSim"
-      ]
+      "items": ["Vivado", "ModelSim"]
     },
     {
       "category": "Tools",
-      "items": [
-        "GitHub",
-        "Linux",
-        "MATLAB",
-        "Visual Studio"
-      ]
+      "items": ["GitHub", "Linux", "MATLAB", "Visual Studio"]
     }
   ],
   "projects": [
@@ -77,10 +54,7 @@
         "Debug support: fault isolation for shorts and intermittent connections during prototyping",
         "Flight-test support: review observations/telemetry and propose integration changes"
       ],
-      "gallery": [
-        "sae_circuit_architecture.jpg",
-        "sae_circuit.jpg"
-      ]
+      "gallery": ["sae_circuit_architecture.jpg", "sae_circuit.jpg"]
     },
     {
       "title": "Robowars Competition – Autonomous Robot",
@@ -92,10 +66,7 @@
         "Integrated sensors and motor driver; tuned behavior for stable real-time response",
         "Improved robustness through mounting, wiring strain relief, and iteration"
       ],
-      "gallery": [
-        "sumo_robot.jpg",
-        "sumo_robot_cad.jpg"
-      ]
+      "gallery": ["sumo_robot.jpg", "sumo_robot_cad.jpg"]
     },
     {
       "title": "Autonomous Hovercraft – Prototype & CAD",
@@ -107,23 +78,20 @@
         "Electronics integration and bring-up: wiring, sensor checks, incremental testing",
         "Navigation behavior iteration based on test results (tuning and debugging)"
       ],
-      "gallery": [
-        "hovercraft_cad.jpg",
-        "hovercraft_cad_design2.jpg"
-      ]
+      "gallery": ["hovercraft_cad.jpg", "hovercraft_cad_design2.jpg"]
     },
-     {
-  "title": "Buck Converter PCB (BEC) (Planned / In Progress)",
-  "subtitle": "SAE Club Project · Target: March 2026",
-  "image": "placeholder_project.jpg",
-  "description": "Planned power electronics project to design a buck converter PCB for a stable power rail for RC/aircraft electronics.",
-  "bullets": [
-    "Goal: architecture and component selection (controller, inductor, protections)",
-    "Goal: schematic and BOM; LTspice validation (stability and transient response)",
-    "Goal: PCB layout fundamentals (grounding, decoupling, high di/dt loop control)"
-  ],
-  "gallery": []
-}
+    {
+      "title": "Buck Converter PCB (BEC) (Planned / In Progress)",
+      "subtitle": "SAE Club Project · Target: March 2026",
+      "image": "Buck_Converter.jpg",
+      "description": "Planned power electronics project to design a buck converter PCB for a stable power rail for RC/aircraft electronics.",
+      "bullets": [
+        "Goal: architecture and component selection (controller, inductor, protections)",
+        "Goal: schematic and BOM; LTspice validation (stability and transient response)",
+        "Goal: PCB layout fundamentals (grounding, decoupling, high di/dt loop control)"
+      ],
+      "gallery": []
+    },
     {
       "title": "ROS2 Chess Robot Arm (Planned / In Progress)",
       "subtitle": "IEEE Club Project · Target: Summer 2026",
@@ -135,7 +103,7 @@
         "Goal: safety constraints (joint limits, workspace bounds) and documentation"
       ],
       "gallery": []
-    },
+    }
   ],
   "contact": {
     "heading": "Contact",

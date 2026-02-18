@@ -218,6 +218,13 @@ h1{
   box-shadow: 0 0 22px rgba(0,229,255,.18), 0 0 18px rgba(122,44,255,.10);
 }
 
+/* ✅ For schematics: show whole image, don’t crop */
+.project img.schematic{
+  object-fit: contain;
+  background: rgba(0,0,0,.25);
+  padding: 10px;
+}
+
 .project h3{margin:0 0 6px}
 .meta{
   color:rgba(199,204,255,.94);
@@ -373,4 +380,3 @@ a:hover{
   border-color: rgba(255,43,214,.45);
 }
 /* ===== /Lightbox ===== */
-

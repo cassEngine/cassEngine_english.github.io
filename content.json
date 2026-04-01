@@ -44,7 +44,7 @@
   ],
   "projects": [
     {
-      "title": "SAE Aero Design – Electrical Systems",
+      "title": "SAE Aero Design Competition– Electrical Systems",
       "subtitle": "Concordia University · 2025 – Present",
       "image": "sae_plane.jpg",
       "description": "Electrical systems work for a competition RC aircraft: power distribution, harnessing, integration, and troubleshooting during build and flight testing.",
@@ -81,7 +81,7 @@
       "gallery": ["hovercraft_cad.jpg", "hovercraft_cad_design2.jpg"]
     },
     {
-      "title": "Buck Converter PCB (BEC) (Planned / In Progress)",
+      "title": "Buck Converter PCB (BEC) (In Progress)",
       "subtitle": "SAE Club Project · Target: March 2026",
       "image": "Buck_Converter.jpg",
       "description": "Planned power electronics project to design a buck converter PCB for a stable power rail for RC/aircraft electronics.",
@@ -94,7 +94,7 @@
     },
     {
       "title": "ROS2 Chess Robot Arm (Planned / In Progress)",
-      "subtitle": "IEEE Club Project · Target: Summer 2026",
+      "subtitle": "IEEE Club Project · Target: August 2026",
       "image": "placeholder_project.jpg",
       "description": "Planned robotics project to build a ROS2-based control stack for a robotic arm to execute chess moves reliably and safely.",
       "bullets": [

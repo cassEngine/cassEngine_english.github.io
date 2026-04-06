@@ -81,12 +81,11 @@
       "gallery": ["hovercraft_cad.jpg", "hovercraft_cad_design2.jpg"]
     },
     {
-      "title": "Buck Converter PCB (BEC) (In Progress)",
-      "subtitle": "SAE Club Project · Target: March 2026",
+      "title": "Buck Converter PCB (BEC)",
+      "subtitle": "SAE Club Project",
       "image": "Buck_Converter.jpg",
       "description": "Planned power electronics project to design a buck converter PCB for a stable power rail for RC/aircraft electronics.",
       "bullets": [
-        "Goal: architecture and component selection (controller, inductor, protections)",
         "Goal: schematic and BOM; LTspice validation (stability and transient response)",
         "Goal: PCB layout fundamentals (grounding, decoupling, high di/dt loop control)"
       ],

@@ -81,10 +81,10 @@
       "gallery": ["hovercraft_cad.jpg", "hovercraft_cad_design2.jpg"]
     },
     {
-      "title": "Buck Converter PCB (BEC)",
+      "title": "Programmable Buck Converter PCB (BEC)",
       "subtitle": "SAE Club Project",
       "image": "Buck_Converter.jpg",
-      "description": "Planned power electronics project to design a buck converter PCB for a stable power rail for RC/aircraft electronics.",
+      "description": "Planned power electronics project to design a prpgrammable buck converter PCB for a stable power rail for RC/aircraft electronics. Using a Dip Switch, we can select the desired voltage output (4.8V, 6.0V, 7.4V or 8.4V).",
       "bullets": [
         "Goal: schematic and BOM; LTspice validation (stability and transient response)",
         "Goal: PCB layout fundamentals (grounding, decoupling, high di/dt loop control)"

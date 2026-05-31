@@ -77,10 +77,8 @@ a{
   left:0;
   width:100vw;
   height:240px;
-
   transform:translateX(-110vw);
   animation:signalTravel 1s cubic-bezier(.15,.8,.25,1) forwards;
-
   filter:
     drop-shadow(0 0 8px rgba(0,229,255,1))
     drop-shadow(0 0 22px rgba(0,229,255,.95))
@@ -106,7 +104,6 @@ a{
   stroke-width:5;
 }
 
-/* This physically moves the signal from left to right */
 @keyframes signalTravel{
   0%{
     transform:translateX(-110vw);
@@ -148,7 +145,6 @@ a{
   }
 }
 
-/* Hide website until loading animation is done */
 .is-loading nav,
 .is-loading .container{
   opacity:0;

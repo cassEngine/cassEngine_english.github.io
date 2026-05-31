@@ -45,7 +45,7 @@ a{
   align-items:center;
   justify-content:center;
   background:
-    radial-gradient(900px 500px at 50% 50%, rgba(0,229,255,.20), transparent 60%),
+    radial-gradient(900px 500px at 50% 50%, rgba(0,229,255,.22), transparent 60%),
     radial-gradient(900px 500px at 80% 25%, rgba(122,44,255,.18), transparent 62%),
     #02030d;
   opacity:1;
@@ -60,26 +60,32 @@ a{
 }
 
 .loader-content{
-  width:min(1000px, 94vw);
+  width:100vw;
   text-align:center;
 }
 
-.signal-wrap{
+.signal-screen{
   position:relative;
-  width:100%;
-  height:220px;
+  width:100vw;
+  height:240px;
   overflow:hidden;
 }
 
 .electric-signal{
   position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
+  top:0;
+  left:0;
+  width:100vw;
+  height:240px;
+
+  transform:translateX(-110vw);
+  animation:signalTravel 1s cubic-bezier(.15,.8,.25,1) forwards;
+
   filter:
     drop-shadow(0 0 8px rgba(0,229,255,1))
     drop-shadow(0 0 22px rgba(0,229,255,.95))
-    drop-shadow(0 0 46px rgba(0,153,255,.85));
+    drop-shadow(0 0 50px rgba(0,153,255,.90))
+    drop-shadow(0 0 90px rgba(0,229,255,.70));
 }
 
 .signal-glow,
@@ -87,15 +93,12 @@ a{
   fill:none;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-dasharray:1700;
-  stroke-dashoffset:1700;
-  animation:drawSignal 1s ease-out forwards;
 }
 
 .signal-glow{
-  stroke:rgba(0,229,255,.55);
-  stroke-width:18;
-  filter:blur(8px);
+  stroke:rgba(0,229,255,.60);
+  stroke-width:22;
+  filter:blur(10px);
 }
 
 .signal-core{
@@ -103,24 +106,29 @@ a{
   stroke-width:5;
 }
 
-.signal-flare{
-  position:absolute;
-  top:50%;
-  left:-80px;
-  width:90px;
-  height:90px;
-  border-radius:999px;
-  transform:translateY(-50%);
-  background:radial-gradient(circle, #ffffff 0 8%, #00e5ff 20%, rgba(0,229,255,.35) 42%, transparent 72%);
-  box-shadow:
-    0 0 25px rgba(0,229,255,1),
-    0 0 70px rgba(0,229,255,.95),
-    0 0 120px rgba(0,153,255,.80);
-  animation:flareMove 1s ease-out forwards;
+/* This physically moves the signal from left to right */
+@keyframes signalTravel{
+  0%{
+    transform:translateX(-110vw);
+    opacity:0;
+  }
+
+  8%{
+    opacity:1;
+  }
+
+  85%{
+    opacity:1;
+  }
+
+  100%{
+    transform:translateX(110vw);
+    opacity:0;
+  }
 }
 
 .loader-text{
-  margin-top:-30px;
+  margin-top:-38px;
   font-size:14px;
   font-weight:900;
   letter-spacing:.22em;
@@ -130,33 +138,11 @@ a{
   animation:loaderTextPulse .5s ease-in-out infinite alternate;
 }
 
-@keyframes drawSignal{
-  from{
-    stroke-dashoffset:1700;
-  }
-  to{
-    stroke-dashoffset:0;
-  }
-}
-
-@keyframes flareMove{
-  0%{
-    left:-90px;
-    opacity:0;
-  }
-  8%{
-    opacity:1;
-  }
-  100%{
-    left:calc(100% + 40px);
-    opacity:1;
-  }
-}
-
 @keyframes loaderTextPulse{
   from{
     opacity:.55;
   }
+
   to{
     opacity:1;
   }
@@ -179,6 +165,7 @@ a{
     opacity:0;
     transform:translateY(10px);
   }
+
   to{
     opacity:1;
     transform:translateY(0);
@@ -205,6 +192,7 @@ body::before{
   0%{
     transform:translate3d(0,0,0) scale(1);
   }
+
   100%{
     transform:translate3d(-2.2%,1.2%,0) scale(1.045);
   }
@@ -327,6 +315,7 @@ nav{
     transform:translateY(0);
     opacity:.65;
   }
+
   100%{
     transform:translateY(-3px);
     opacity:.95;
@@ -631,9 +620,7 @@ a:hover{
 @media (prefers-reduced-motion:reduce){
   body::before,
   .hero::after,
-  .signal-glow,
-  .signal-core,
-  .signal-flare,
+  .electric-signal,
   .loader-text{
     animation:none;
   }

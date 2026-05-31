@@ -12,7 +12,7 @@
   <!-- ===== Neon Electrical Loading Screen ===== -->
   <div id="loader" class="loader" aria-label="Loading portfolio">
     <div class="loader-content">
-      <div class="signal-wrap">
+      <div class="signal-screen">
         <svg class="electric-signal" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true">
           <path
             class="signal-glow"
@@ -23,8 +23,6 @@
             d="M0 110 L90 110 L125 70 L170 150 L230 150 L270 95 L325 95 L370 35 L425 175 L485 175 L530 110 L620 110 L655 70 L700 150 L765 150 L820 105 L900 105 L940 55 L995 165 L1060 165 L1105 110 L1200 110"
           />
         </svg>
-
-        <div class="signal-flare"></div>
       </div>
 
       <div class="loader-text">Initializing portfolio...</div>
@@ -34,6 +32,7 @@
 
   <nav>
     <div class="brand">Cassandra Philogene</div>
+
     <div class="navlinks">
       <a href="#apropos">About</a>
       <a href="#competences">Skills</a>
@@ -43,17 +42,25 @@
   </nav>
 
   <div class="container">
+
     <section class="hero">
       <div>
         <div class="kicker" id="top">Portfolio · Summer/Fall 2026 Internship</div>
+
         <h1>Electrical Engineering<br/>Robotics &amp; Electronics</h1>
-        <p class="subtitle">Electrical Engineering · Robotics · Electronics · CAD · Programming</p>
+
+        <p class="subtitle">
+          Electrical Engineering · Robotics · Electronics · CAD · Programming
+        </p>
 
         <div class="cta">
           <a class="btn primary" href="assets/resume/Philogene_Cassandra_CV(4).pdf" target="_blank" rel="noopener">
             Download my resume (PDF)
           </a>
-          <a class="btn" href="#contact">Contact me</a>
+
+          <a class="btn" href="#contact">
+            Contact me
+          </a>
         </div>
 
         <div class="pills">
@@ -66,6 +73,7 @@
 
     <section class="section" id="apropos">
       <h2>About</h2>
+
       <div class="card padded">
         <p class="subtitle" style="margin:0;max-width:none">
           Electrical Engineering student at Concordia University focused on embedded systems, robotics, and power electronics. I build and validate prototypes through schematic and simulation work, integration and wiring, and iterative testing. I document design decisions so systems are repeatable and debuggable.
@@ -77,8 +85,10 @@
       <h2>Skills</h2>
 
       <div class="grid skills">
+
         <div class="card padded">
           <div><strong>Programming</strong></div>
+
           <div class="pills">
             <div class="pill">C</div>
             <div class="pill">C++</div>
@@ -89,6 +99,7 @@
 
         <div class="card padded">
           <div><strong>Embedded Systems</strong></div>
+
           <div class="pills">
             <div class="pill">Arduino</div>
             <div class="pill">ROS2</div>
@@ -100,6 +111,7 @@
 
         <div class="card padded">
           <div><strong>Hardware &amp; Design</strong></div>
+
           <div class="pills">
             <div class="pill">PCB design</div>
             <div class="pill">LTspice</div>
@@ -109,6 +121,7 @@
 
         <div class="card padded">
           <div><strong>FPGA &amp; Simulation</strong></div>
+
           <div class="pills">
             <div class="pill">Vivado</div>
             <div class="pill">ModelSim</div>
@@ -117,6 +130,7 @@
 
         <div class="card padded">
           <div><strong>Tools</strong></div>
+
           <div class="pills">
             <div class="pill">GitHub</div>
             <div class="pill">Linux</div>
@@ -124,6 +138,7 @@
             <div class="pill">Visual Studio</div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -131,6 +146,7 @@
       <h2>Projects</h2>
 
       <div class="projects">
+
         <div class="card padded project">
           <div>
             <img src="assets/images/sae_plane.jpg" alt="SAE Aero Design – Electrical Systems">
@@ -138,6 +154,7 @@
 
           <div>
             <h3>SAE Aero Design – Electrical Systems</h3>
+
             <div class="meta">Concordia University · 2025 – Present</div>
 
             <div class="subtitle" style="margin:0">
@@ -165,6 +182,7 @@
 
           <div>
             <h3>Robowars Competition – Autonomous Robot</h3>
+
             <div class="meta">Competition · April 2025</div>
 
             <div class="subtitle" style="margin:0">
@@ -191,6 +209,7 @@
 
           <div>
             <h3>Autonomous Hovercraft – Prototype &amp; CAD</h3>
+
             <div class="meta">Project · December 2025</div>
 
             <div class="subtitle" style="margin:0">
@@ -217,6 +236,7 @@
 
           <div>
             <h3>ROS2 Chess Robot Arm — Planned / In Progress</h3>
+
             <div class="meta">IEEE Club Project · Target: Summer 2026</div>
 
             <div class="subtitle" style="margin:0">
@@ -238,6 +258,7 @@
 
           <div>
             <h3>Buck Converter PCB — BEC</h3>
+
             <div class="meta">SAE Club Project</div>
 
             <div class="subtitle" style="margin:0">
@@ -250,6 +271,7 @@
             </ul>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -278,7 +300,10 @@
       </div>
     </section>
 
-    <div class="footer">© 2026 Cassandra Philogene · Built for internship applications</div>
+    <div class="footer">
+      © 2026 Cassandra Philogene · Built for internship applications
+    </div>
+
   </div>
 
   <!-- ===== Lightbox ===== -->
@@ -292,7 +317,6 @@
     document.addEventListener('DOMContentLoaded', () => {
       const loader = document.getElementById('loader');
 
-      // Keep the neon signal animation for 1 second, then reveal the website.
       setTimeout(() => {
         document.body.classList.remove('is-loading');
         document.body.classList.add('site-ready');
@@ -302,7 +326,6 @@
         }
       }, 1000);
 
-      // Lightbox logic
       const lightbox = document.getElementById('lightbox');
       const lightboxImg = lightbox.querySelector('.lightbox-img');
       const closeBtn = lightbox.querySelector('.lightbox-close');
